@@ -16,11 +16,92 @@
 
 	<div class="wrapper">
 		<div class="s-page random-restored-page">
-			<h2 class="page-tile">Home page</h2>
+			<h2 class="page-title">Home page</h2>
 			<div class="close-button s-close-button">x</div>
 		</div><!--end of home page-->
 
-		
+		<div s-page custome-page>
+			<h2 class="page-title">About me</h2>
+			<div class="close-button s-close-button">x</div>
+		</div><!--end of about page-->
+
+		<div class="r-page random-r-page">
+			<h2 class="page-title">Portfolio</h2>
+			<p>Here is a selective of some of the unique designs that i make.</p>
+			<div class="close-button r-close-button"></div>
+		</div><!--end of portfolio-->
+
+		<!--tiles==each tile specifies the page to open and the type of animation-->
+
+		<div class="dashboard clearfix"> <!--creating the dashboard for the tiles-->
+			<ul class="tiles"> <!--creating tiles-->
+				<div class="col1 clearfix"> <!--making the column 1 tiles-->
+					<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
+						<div><p>This is my home page</p></div>
+						<div><p>I am a super designer</p></div>
+					</li><!--first tile-->
+
+					<li class="tile tile-small tile-2 slideTestRight" data-page-type="s-page" data-page-name="random-resstored-page">
+						 <div><p class="icon-arrow-right"></p></div>
+						 <div><p>This is my images page</p></div>
+					</li><!--2nd tile ends here-->
+
+					<li class="tile tile-small last tile-3" data-page-type="r-page" data-page-name="random-r-page">
+						<p><icon-calendar-alt-fill</p>
+					</li><!--3rd tile ends here-->
+
+					<li class="tile tile-big tile-4 fig-tile" data-page="r-page" data-page-name="random-r-page">
+						<figure>
+							<img src="image/videos.png">
+							<figcaption class="tile-caption caption-left">Photo Gallery</figcaption>
+						</figure>
+					</li><!--4th tile ends here-->
+				</div><!--FIRST COLUMN ENDS HERE-->
+
+				<div class="col2 clearfix"> <!--col2 tiles begins here-->
+					<li class="tile tile-big tile-5" data-type-page="r-page" data-page-name="random-r-page">
+						<div><p><span class="icon-cloudy"></span>Video gallery(adventures)</p></div>
+					</li> <!--end of tile5-->
+
+					<li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
+						<div><p><span class="icon-skype"></span>Contact me</p></div>
+						<div><p>You need to hire an expert</p></div>
+					</li><!--end of tile6-->
+
+					<!--tiles with 3D effects should have the following structure 
+						1. a container inside the tile with class of .face
+						2. 2 figure elements , one with class of .front, and the other with the class of .back 
+					-->
+
+					<li class="tile tile-small tile-7 rotate3D rotate3DX" data-page-type="r-page" data-page-name="random-r-page">
+						<div class="face">
+							<div class="front"><span class="icon-picasa"></span></div>
+							<div class="back"><p>View my adventure</p></div>
+						</div>
+					</li><!--tile 7 ends here-->
+
+					<li class="tile tile-small tile-8 rotate3D rotate3DY" data-page-type="r-page" data-page-name="random-r-page">
+						<div class="face">
+							<div class="front"><span class="icon-instagram"></span></div>
+							<div class="back"><p>Welcome to my contact page</p></div>
+						</div>
+					</li><!--tile 8 ends here-->
+				</div><!--COLUMN 2 ENDS HERE-->
+
+				<div class="col3 clearfix"> <!--col3 begins here-->
+					<li class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
+						<figure>
+							<img src="images/peter.jpg">
+							<figcaption class="tile-caption caption-bottom">This is my fixed caption</figcaption>
+						</figure>
+					</li> <!--tile9 begins here-->
+
+					<li class="tile tile-bige tile-10" data-page-type="s-page" data-page-name="custom-page">
+						<div><p>Feel free to contact me. professor peter ngugi</p></div>
+					</li><!--tile10 begins here-->
+				</div> <!--col3 ends here-->
+			</ul>
+		</div>
 	</div>
 </body>
 </html>
