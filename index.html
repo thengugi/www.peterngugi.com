@@ -1,110 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="X-AU-compatible" content="IE=edge,chrome=1">
+	<meta charset="utf-8">
+	<meta="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0"/>
 	<title>Peter Ngugi</title>
 
-	<link rel="stylesheet" href="css/page-style.css" />
-	<script src="js/modernizr-1.5.min.js"></script>
+	<!--styles-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard-style.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+
+	<!--scripts-->
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript"></script>
+
+	<!--fonts-->
+	 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+	   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
-
 <body>
-	<header> The end of the road is just a walking distance
-		</header>
 
-	<div class="wrapper">
-		<div class="s-page random-restored-page">
-			<h2 class="page-title">Home page</h2>
-			<div class="close-button s-close-button">x</div>
-		</div><!--end of home page-->
+<!--creating the navigation menu-->
+<nav class="nav-bar">
+	<div class="nav-container">
+		<a id="nav-menu" class="nav-menu"><span>Menu</span>&#9776;</a>
+		<ul class="nav-list" id="nav">
+			<li><a href="#" id="color-1"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="#" id="color-2"><i class="fa fa-user"></i>About</a></li>
+			<li><a href="#" id="color-3"><i class="fa fa-suitcase"></i>Portfolio</a></li>
+			<li><a href="#" id="color-4"><i class="fa fa-weixin"></i>Blog</a></li>
+			<li><a href="#" id="color-5"><i class="fa fa-home"></i>Tutorials</a></li>
+			<li><a href="#" id="color-6"><i class="fa fa-envelope"></i>Contacts</a></li>
 
-		<div s-page custome-page>
-			<h2 class="page-title">About me</h2>
-			<div class="close-button s-close-button">x</div>
-		</div><!--end of about page-->
-
-		<div class="r-page random-r-page">
-			<h2 class="page-title">Portfolio</h2>
-			<p>Here is a selective of some of the unique designs that i make.</p>
-			<div class="close-button r-close-button"></div>
-		</div><!--end of portfolio-->
-
-		<!--tiles==each tile specifies the page to open and the type of animation-->
-
-		<div class="dashboard clearfix"> <!--creating the dashboard for the tiles-->
-			<ul class="tiles"> <!--creating tiles-->
-				<div class="col1 clearfix"> <!--making the column 1 tiles-->
-					<li class="tile tile-big tile-1 slideTextUp" data-page-type="r-page" data-page-name="random-r-page">
-						<div><p>This is my home page</p></div>
-						<div><p>I am a super designer</p></div>
-					</li><!--first tile-->
-
-					<li class="tile tile-small tile-2 slideTestRight" data-page-type="s-page" data-page-name="random-resstored-page">
-						 <div><p class="icon-arrow-right"></p></div>
-						 <div><p>This is my images page</p></div>
-					</li><!--2nd tile ends here-->
-
-					<li class="tile tile-small last tile-3" data-page-type="r-page" data-page-name="random-r-page">
-						<p><icon-calendar-alt-fill</p>
-					</li><!--3rd tile ends here-->
-
-					<li class="tile tile-big tile-4 fig-tile" data-page="r-page" data-page-name="random-r-page">
-						<figure>
-							<img src="image/videos.png">
-							<figcaption class="tile-caption caption-left">Photo Gallery</figcaption>
-						</figure>
-					</li><!--4th tile ends here-->
-				</div><!--FIRST COLUMN ENDS HERE-->
-
-				<div class="col2 clearfix"> <!--col2 tiles begins here-->
-					<li class="tile tile-big tile-5" data-type-page="r-page" data-page-name="random-r-page">
-						<div><p><span class="icon-cloudy"></span>Video gallery(adventures)</p></div>
-					</li> <!--end of tile5-->
-
-					<li class="tile tile-big tile-6 slideTextLeft" data-page-type="r-page" data-page-name="random-r-page">
-						<div><p><span class="icon-skype"></span>Contact me</p></div>
-						<div><p>You need to hire an expert</p></div>
-					</li><!--end of tile6-->
-
-					<!--tiles with 3D effects should have the following structure 
-						1. a container inside the tile with class of .face
-						2. 2 figure elements , one with class of .front, and the other with the class of .back 
-					-->
-
-					<li class="tile tile-small tile-7 rotate3D rotate3DX" data-page-type="r-page" data-page-name="random-r-page">
-						<div class="face">
-							<div class="front"><span class="icon-picasa"></span></div>
-							<div class="back"><p>View my adventure</p></div>
-						</div>
-					</li><!--tile 7 ends here-->
-
-					<li class="tile tile-small tile-8 rotate3D rotate3DY" data-page-type="r-page" data-page-name="random-r-page">
-						<div class="face">
-							<div class="front"><span class="icon-instagram"></span></div>
-							<div class="back"><p>Welcome to my contact page</p></div>
-						</div>
-					</li><!--tile 8 ends here-->
-				</div><!--COLUMN 2 ENDS HERE-->
-
-				<div class="col3 clearfix"> <!--col3 begins here-->
-					<li class="tile tile-2xbig tile-9 fig-tile" data-page-type="custom-page" data-page-name="random-r-page">
-						<figure>
-							<img src="images/peter.jpg">
-							<figcaption class="tile-caption caption-bottom">This is my fixed caption</figcaption>
-						</figure>
-					</li> <!--tile9 begins here-->
-
-					<li class="tile tile-bige tile-10" data-page-type="s-page" data-page-name="custom-page">
-						<div><p>Feel free to contact me. professor peter ngugi</p></div>
-					</li><!--tile10 begins here-->
-				</div> <!--col3 ends here-->
-			</ul>
-		</div><!--dashbord ends here-->
-
-		<script src="js/jquery-1.10.2.min.js"></script>
-		<script src="js/scripts.js"></script>
+		</ul>
 	</div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+	$(document).ready(function() {
+		$('#nav-menu').click(function() {
+			$('ul.nav-list').addClass('nav-open').slideToggle('300');
+		});
+	});
+	</script>
 </body>
 </html>
