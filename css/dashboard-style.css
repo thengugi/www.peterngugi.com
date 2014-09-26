@@ -1,6 +1,7 @@
 body {
-	font-family: 'open-sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif; 
 	background: #e2e2e2;
+	margin: 0px auto;
 }
 
 a {
@@ -133,3 +134,69 @@ a {
 		padding-left: 30px;
 	}
 }
+
+/*BODY USING CSS FLEX*/
+ #flex-container {
+margin-left: 160px;
+display: -webkit-flex;
+display: flex;
+-webkit-flex-wrap: wrap;
+flex-wrap: wrap;
+width: 1000px;
+margin-top: 25px;
+}
+#flex-item {
+width: 375px;
+height: 235px;
+margin: 25px;
+}
+
+
+#flex-item h2 {
+	font-size: 30px;
+	padding: 10px;
+	text-align: left;
+	cursor: pointer;
+}
+
+#flex-tem p {
+	text-align: left;
+	font-size: 25px;
+	padding: 2px;
+}
+
+.bio h2:hover {
+	color: #3498db;
+}
+
+.ethos h2:hover {
+	color: #f1c408;
+}
+
+.skills h2:hover {
+	color: #e67e22;
+}
+
+.contacts h2:hover {
+	color: #9b59b6;
+}
+
+
+/*SKILLS*/
+.skills ul li {
+	padding: 2px;
+  }
+
+
+/*CONTACTS */
+.contacts ul li {
+	padding: 10px;
+}
+
+
+.contacts ul li a {
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+
